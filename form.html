@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="=UTF-8">
+        <title>Title</title>
+        <style>
+            #username {
+                color: red;
+            }
+            #password {
+                color: blue;
+            }
+            #submit {
+                color: red;
+            }
+            #comment {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://example.com/join.php" method="post">
+            <p>Username:
+            <input type="text" name="username" id="username"
+            size="15" maxlength="30" />
+            </p>
+            <p>Password:
+                <input type="password" name="username" id="password"
+                size="15" maxlength="30" />   
+            </p>
+            <p>What is your major?</p>
+                <input type="radio" name="major" id="IS"/>IS
+                <input type="radio" name="major" id="Acctounting"/>Accounting
+                <input type="radio" name="major" id="Hospitality"/>Hospitality
+            <br>
+            <select name="major">
+                <option value="IS"selected="selected">IS</option>
+                <option value="radio">Accounting</option>
+                <option value="radio">Hospitality</option>
+            </select>
+            <br>
+            <p>Upload your portfolio
+                <input type="file" name="portfolio"/>
+                <input type="submit" value="Upload"/>
+            </p>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="4" id="comment">Enter your comment...</textarea>
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </body>
+</html>
